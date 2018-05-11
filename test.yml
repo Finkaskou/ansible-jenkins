@@ -6,5 +6,5 @@
   - name: Installation de apache
     become: yes
     package:
-      name: httpd
+      name: apache2
       state: latest

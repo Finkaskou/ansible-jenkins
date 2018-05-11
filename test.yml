@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+  - name: test ping
+    ping:
+  - name: Installation de apache
+    become: yes
+    package:
+      name: httpd
+      state: latest
